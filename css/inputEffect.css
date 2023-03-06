@@ -1,0 +1,140 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    min-height: 100vh;
+}
+/* .box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    border-radius: 10px;
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 420px;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 420px;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3.5s;
+}
+
+.borderLine{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+
+.borderLine::before{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 420px;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg,transparent,transparent,#ffffff,#ffffff,#ffffff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+
+.borderLine::after{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 420px;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg,transparent,transparent,#ffffff,#ffffff,#ffffff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -5.5s;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box .innerBox{
+    position: absolute;
+    inset: 4px;
+    background-color: #222;
+    padding: 50px 40px;
+    border-radius: 10px;
+    z-index: 2;
+} */
+
+.buttonBox{
+    position: relative;
+    padding: 40px 80px;
+    background: rgba(0,0,0,.75);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.buttonBox::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(transparent,transparent,#00ccff,#00ccff);
+    animation: animate 4s linear infinite;
+}
+.buttonBox::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(transparent,transparent,#fff,#fff);
+    animation: animate 4s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.buttonBox span{
+    position: absolute;
+    inset: 2px;
+    border-radius: 5px;
+    background-color: black;
+    z-index: 1;
+    color: #fff;
+}
