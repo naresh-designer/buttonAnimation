@@ -5,7 +5,7 @@ body{
     background-color: darkgray;
     min-height: 100vh;
 }
-/* .box{
+.box{
     position: relative;
     width: 380px;
     height: 420px;
@@ -38,9 +38,9 @@ body{
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
-    animation-delay: -3.5s;
+    animation-delay: -3s;
 }
-
+/* 
 .borderLine{
     position: absolute;
     top: 0;
@@ -73,7 +73,7 @@ body{
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -5.5s;
-}
+} */
 
 @keyframes animate {
     0%{
@@ -91,9 +91,9 @@ body{
     padding: 50px 40px;
     border-radius: 10px;
     z-index: 2;
-} */
+}
 
-.buttonBox{
+/* .buttonBox{
     position: relative;
     padding: 40px 80px;
     background: rgba(0,0,0,.75);
@@ -145,4 +145,4 @@ body{
 }
 .buttonBox span:hover{
     transform: scale(1.5);
-}
+} */
