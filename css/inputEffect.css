@@ -102,23 +102,27 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transition: .5s;
+}
+.buttonBox:hover{
+    transform: scale(.90);
 }
 .buttonBox::before{
     content: '';
     position: absolute;
     width: 200px;
     height: 200px;
-    background: conic-gradient(transparent,transparent,#00ccff,#00ccff);
-    animation: animate 4s linear infinite;
+    background-image: conic-gradient(#f00 20deg,transparent 120deg);
+    animation: animate 3s linear infinite;
 }
 .buttonBox::after{
     content: '';
     position: absolute;
-    width: 200px;
-    height: 200px;
-    background: conic-gradient(transparent,transparent,#fff,#fff);
-    animation: animate 4s linear infinite;
-    animation-delay: 2s;
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(blue 20deg,transparent 120deg);
+    animation: animate 3s linear infinite;
+    animation-delay: 1.5s;
 }
 
 @keyframes animate {
@@ -132,9 +136,13 @@ body{
 
 .buttonBox span{
     position: absolute;
-    inset: 2px;
+    inset: 3px;
     border-radius: 5px;
     background-color: black;
     z-index: 1;
     color: #fff;
+    transition: .5s;
+}
+.buttonBox span:hover{
+    transform: scale(1.5);
 }
